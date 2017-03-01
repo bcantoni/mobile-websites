@@ -1,4 +1,4 @@
-# Mobile Website Directory Project
+# Mobile Website Directory Project [![Build Status](https://travis-ci.org/bcantoni/mobile-websites.svg?branch=master)](https://travis-ci.org/bcantoni/mobile-websites)
 
 ## About
 
@@ -25,7 +25,31 @@ If you're more familiar with GitHub development and the structure of the code he
 
 ## Structure
 
-TBD - currently in progress of migrating to something easier to manage...
+The website is currently driven by a single PHP index file along with a set of include files, one for each category:
+
+| Slug    | Name |
+| --------|----- |
+| biz     | Business |
+| ent     | Entertainment |
+| info    | Information |
+| news    | News |
+| portal  | Portal |
+| search  | Search |
+| shop    | Shopping |
+| sports  | Sports |
+| tech    | Technology |
+| travel  | Travel |
+| weather | Weather |
+
+The "slug" is the short code which is used both for the data file and the category web URL. For example the slug for Business is `biz`, the data file is `biz.inc` and the web link is http://cantoni.mobi/biz.
+
+The data files are simply PHP array definitions, with one entry for each mobile website link. Here's a sample from the `biz.inc` data file:
+
+    array("url"=>"http://www.amexmobile.com/", "title"=>"American Express", "new"=>""), 
+    array("url"=>"http://bofa.mobi/", "title"=>"Bank of America", "new"=>""), 
+    array("url"=>"http://www.barclays.mobi/", "title"=>"Barclays", "new"=>""), 
+
+The 'url' and 'title' attributes are required, and 'new' is currently unused.
 
 ## License
 
