@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo Building
+docker build -t phptest -f ./docker/Dockerfile .
+
+echo Starting
+docker run -d -p 80:80 --name php-sample phptest

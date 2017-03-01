@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo Stopping
+running=$(docker ps -q -f 'name=php-sample')
+
+if [ "$running" != "" ]
+then
+    docker stop $running
+    docker rm $running
+else
+	echo nothing to stop
+fi
+docker rmi phptest
