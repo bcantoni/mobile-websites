@@ -1,0 +1,23 @@
+AddType text/cache-manifest .appcache
+AddDefaultCharset UTF-8
+
+RewriteEngine On
+
+# canonical: cantoni.mobi
+RewriteCond %{HTTP_HOST} ^www.cantoni\.mobi$ [NC]
+RewriteRule ^(.*)$ http://cantoni.mobi/$1 [R=301,L]
+
+# fail out any request not meant for cantoni.mobi host name
+RewriteCond %{THE_REQUEST} ^(GET|HEAD|POST)\ /?http:// [NC]
+RewriteCond %{THE_REQUEST} !^(GET|HEAD|POST)\ /?http://(www\.)?cantoni\.mobi/
+RewriteRule .* - [F]
+
+# support cantoni.mobi/category/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule \.html$ - [L]
+RewriteRule . /index.php?cat=%{REQUEST_URI} [L]
+
+# cache everything just a bit
+ExpiresActive on
+ExpiresByType text/html "access plus 1 hour"
