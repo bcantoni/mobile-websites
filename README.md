@@ -9,7 +9,7 @@ This is the code which powers the mobile website directory I've been running at 
 To be included on the list, a proposed website should:
 
 1. Be broadly interesting. Narrow niches or very location specific usually would not qualify (e.g. Palm Beach Hotels).
-2. Have an actual mobile site. Whether it's automatically detected or using a mobile-specific domain, the site should in fact be mobile-friendly (meaning works on small screens and be size effecient).
+2. Have an actual mobile site. Whether it's automatically detected or using a mobile-specific domain, the site should in fact be mobile-friendly (meaning works on small screens and be size efficient).
 
 ## Contributing
 
@@ -23,7 +23,7 @@ The simplest option (and only requires a GitHub account) is to [open an issue](h
 
 If you're more familiar with GitHub development and the structure of the code here (see below), you can submit a [pull request](https://github.com/bcantoni/mobile-websites/pulls) to change the data file directly.
 
-## Structure
+### Structure
 
 The website is currently driven by a single PHP index file along with a set of include files, one for each category:
 
@@ -51,8 +51,18 @@ The data files are simply PHP array definitions, with one entry for each mobile 
 
 The 'url' and 'title' attributes are required, and 'new' is currently unused.
 
+### Travis
+
+This project has a simple Travis CI (continuous integration) [project](https://travis-ci.org/bcantoni/mobile-websites.svg?branch=master) set up to do some minimal testing. At the moment it's checking to make sure all PHP files have valid syntax.
+
+### Docker
+
+For testing locally there is a simple Docker configuration included. The included Dockerfile creates a container using PHP and setting up a configuration which mimics cantoni.mobi.
+
+Scripts:
+* `./docker/run` - create the Docker container and start it; the website should be viewable on port 80 from your Docker host
+* `./docker/stop` - stop the Docker container and clean up
+
 ## License
 
 Copyright (C) 2002-2017 Brian Cantoni. The code and content in this project are licensed under [Creative Commons — Attribution-NonCommercial-ShareAlike 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/us/).
-
-
