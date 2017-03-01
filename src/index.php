@@ -86,9 +86,9 @@ ob_start("ob_gzhandler");
   //include ('adsense.inc');
 ?>
 
-<p>Try <a href="http://tweetfave.com" title="Tweetfave - Twitter favorites delivered to your inbox">Tweetfave</a> - your Twitter favorites automatically delivered to your inbox!</p>
+<p>Try <a href="https://tweetfave.com" title="Tweetfave - Twitter favorites delivered to your inbox">Tweetfave</a> - your Twitter favorites automatically delivered to your inbox!</p>
 
-<p>Follow <a href="https://twitter.com/bcantoni">@bcantoni</a> on Twitter - <a href="/about.php">About Cantoni.mobi</a> - <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/us/">CC Licensed</a></p>
+<p>Follow <a href="https://twitter.com/bcantoni">@bcantoni</a> on Twitter - <a href="/about.php">About Cantoni.mobi</a> - <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/3.0/us/">CC Licensed</a></p>
 
 <?php
 // google analytics
