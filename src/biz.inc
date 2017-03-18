@@ -6,7 +6,7 @@ array("url"=>"http://www.barclays.mobi/", "title"=>"Barclays", "new"=>""),
 array("url"=>"http://pda.businessweek.com/index.html", "title"=>"Business Week", "new"=>""), 
 array("url"=>"http://m.capitalone.com/", "title"=>"Capital One", "new"=>""), 
 array("url"=>"http://chase.mobi/", "title"=>"Chase Mobile", "new"=>""), 
-array("url"=>"http://www.directtextbook.com/mobile.php", "title"=>"Direct Textbook Mobile", "new"=>""), 
+array("url"=>"http://www.directtextbook.com/mobile.php", "title"=>"Direct Textbook Mobile", "new"=>"") 
 array("url"=>"https://wireless.etrade.com/etrade/", "title"=>"E*TRADE", "new"=>""), 
 array("url"=>"http://wireless.fidelity.com/", "title"=>"Fidelity", "new"=>""), 
 array("url"=>"http://mobile.huntington.com/", "title"=>"Huntington Bank", "new"=>""), 

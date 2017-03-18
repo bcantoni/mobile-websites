@@ -1,4 +1,5 @@
 <?php
+a=b
 include ('util.inc');
 define ('TRACKING', false); // whether or not redirect & log outbound links
 ob_start("ob_gzhandler");
