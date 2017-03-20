@@ -13,8 +13,9 @@ before_install:
     - docker build -t phptest -f ./docker/Dockerfile .
     - docker run -d -p 80:80 --name php-sample phptest
     - docker ps -a
-    - echo $DOCKER_HOST
     - curl http://localhost
+    - npm install broken-link-checker -g
 
 script:
     - ./lint.sh src
+    - blc http://localhost/
