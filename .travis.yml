@@ -12,10 +12,12 @@ services:
 before_install:
     - docker build -t phptest -f ./docker/Dockerfile .
     - docker run -d -p 80:80 --name php-sample phptest
+    - docker pull ktbartholomew/link-checker
     - docker ps -a
     - curl http://localhost
-    - npm install broken-link-checker -g
+#    - npm install broken-link-checker -g
 
 script:
     - ./lint.sh src
-    - blc -r http://localhost/
+#    - blc -o --user-agent "AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30" -r http://localhost/
+    - docker run --rm ktbartholomew/link-checker http://localhost/ -c 20
