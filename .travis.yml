@@ -22,4 +22,4 @@ before_install:
 script:
     - ./lint.sh src
 #    - blc -o --user-agent "AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30" -r http://localhost/
-    - docker run --rm ktbartholomew/link-checker http://localhost/ -c 20
+    - docker run --rm --link php-sample:web ktbartholomew/link-checker http://web/ -c 20
