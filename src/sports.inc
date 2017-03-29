@@ -1,6 +1,6 @@
 <?php
 $links = array(
-array("url"=>"http://www.bbc.co.uk/sport/mobile/", "title"=>"BBC Sport Mobile", "new"=>""), 
+array("url"=>"http://www.bbc.co.uk/sport/", "title"=>"BBC Sport Mobile", "new"=>""), 
 array("url"=>"http://wap.cbssports.com/", "title"=>"CBS Sports", "new"=>""), 
 array("url"=>"http://www.csnbayarea.com/mobile", "title"=>"CSN Bay Area", "new"=>""), 
 array("url"=>"http://espn.mobi/", "title"=>"ESPN", "new"=>""), 
@@ -9,7 +9,7 @@ array("url"=>"http://m.eurosport.com/", "title"=>"Eurosport Mobile", "new"=>""),
 array("url"=>"http://extreme.mobile.msn.com/sports/", "title"=>"FOX Sports", "new"=>""), 
 array("url"=>"http://m.goal.com/", "title"=>"Goal.com - Soccer", "new"=>""), 
 array("url"=>"http://milb.com/", "title"=>"Minor League Baseball", "new"=>""), 
-array("url"=>"http://wap.mlb.com/", "title"=>"MLB.com", "new"=>""), 
+//array("url"=>"http://wap.mlb.com/", "title"=>"MLB.com", "new"=>""), 
 array("url"=>"http://m.fantasysp.com/", "title"=>"Mobile Fantasy Sports Portal", "new"=>""), 
 array("url"=>"http://mobile.weaselsspfld.com/", "title"=>"Motorcycle Events", "new"=>""), 
 array("url"=>"http://m.nbcolympics.com/", "title"=>"NBC Olympics Home", "new"=>""), 
@@ -25,5 +25,5 @@ array("url"=>"http://www.soccerway.mobi/", "title"=>"Soccerway", "new"=>""),
 array("url"=>"http://sportstap.mobi/", "title"=>"sports&lt;&gt;tap", "new"=>""), 
 //array("url"=>"http://m.sportingnews.com/", "title"=>"The Sporting News", "new"=>""), 
 array("url"=>"http://tsn.ca/", "title"=>"TSN Canada Sports", "new"=>""), 
-array("url"=>"http://us.m.yahoo.com/p/sports", "title"=>"Yahoo! Sports", "new"=>""), 
+//array("url"=>"http://us.m.yahoo.com/p/sports", "title"=>"Yahoo! Sports", "new"=>""), 
 );
