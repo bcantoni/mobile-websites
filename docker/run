@@ -1,10 +1,10 @@
 #!/bin/bash
 
 echo Building
-docker build -t phptest -f ./docker/Dockerfile .
+docker build -t cantonimobi -f ./docker/Dockerfile .
 
 echo Starting
-docker run -d -p 80:80 --name php-sample phptest
+docker run -d -p 80:80 --name mobitest cantonimobi
 
 ip=$(docker-machine ip default)
 echo Website is available on http://$ip/
