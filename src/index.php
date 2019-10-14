@@ -25,6 +25,9 @@ ob_start("ob_gzhandler");
     if (array_key_exists($cat, $catmap) && file_exists($cat . ".inc")) {
       $catname = $catmap[$cat];
       $idx = false;
+    } else {
+      http_response_code(404);
+      die;
     }
   }
   $desc = ($idx) ? "Top mobile sites for Android, iPhone, Windows or smart phones. Focus on simplicity and speed." : "Mobile $catname Sites";
