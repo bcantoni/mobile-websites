@@ -18,5 +18,4 @@ before_install:
 
 script:
     - ./lint.sh src
-    - docker run --rm --link mobitest:web ktbartholomew/link-checker http://web/ -c 20
     - docker run --rm --link mobitest:web linkchecker/linkchecker --timeout 5 --check-extern --verbose --no-robots http://web/
