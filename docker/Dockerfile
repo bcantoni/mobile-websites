@@ -10,10 +10,7 @@ EXPOSE 80
 EXPOSE 443
 
 RUN \
-    a2enmod deflate ;\
-    a2enmod expires ;\
-    a2enmod headers ;\
-    a2enmod rewrite ;\
-    a2enconf fqdn
+    a2enmod -q deflate expires headers rewrite ;\
+    a2enconf -q fqdn
 
 CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
