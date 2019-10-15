@@ -53,7 +53,10 @@ The 'url' and 'title' attributes are required, and 'new' is currently unused.
 
 ### Travis
 
-This project has a simple Travis CI (continuous integration) [project](https://travis-ci.org/bcantoni/mobile-websites.svg?branch=master) set up to do some minimal testing. At the moment it's checking to make sure all PHP files have valid syntax.
+This project has a simple Travis CI (continuous integration) [project](https://travis-ci.org/bcantoni/mobile-websites.svg?branch=master) set up to do some minimal testing. At the moment it's doing the following checks:
+
+* Check all external links using [linkchecker](https://github.com/linkchecker/linkchecker); the build will fail for any links which are 404 or where the host doesn't exist, but won't fail for the case where the link exists but is not truly mobile-friendly
+* Ensure sure all PHP files have valid syntax (see `lint.sh`)
 
 ### Docker
 
@@ -65,4 +68,4 @@ Scripts:
 
 ## License
 
-Copyright (C) 2002-2017 Brian Cantoni. The code and content in this project are licensed under [Creative Commons — Attribution-NonCommercial-ShareAlike 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/us/).
+Copyright (C) 2002-2019 Brian Cantoni. The code and content in this project are licensed under [Creative Commons — Attribution-NonCommercial-ShareAlike 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/us/).
