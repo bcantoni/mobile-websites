@@ -3,6 +3,9 @@ language: php
 php:
     - '7.3'
 
+env:
+    - DISABLETRACKING=1
+
 sudo: required
 
 services:
@@ -18,4 +21,4 @@ before_install:
 
 script:
     - ./lint.sh src
-    - docker run --rm --link mobitest:web linkchecker/linkchecker --timeout 5 --check-extern --verbose --no-robots http://web/
+    - docker run --rm --link mobitest:web linkchecker/linkchecker --timeout 5 --check-extern --no-robots http://web/
