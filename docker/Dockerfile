@@ -1,6 +1,6 @@
 FROM php:7.3-apache
 
-LABEL maintainer "brian@cantoni.org>"
+LABEL maintainer "brian@cantoni.org"
 
 COPY src/ /var/www/html/
 COPY conf/default.conf /etc/apache2/sites-available/000-default.conf

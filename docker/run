@@ -4,7 +4,7 @@ echo Building
 docker build -t cantonimobi -f ./docker/Dockerfile .
 
 echo Starting
-docker run -d -p 80:80 --name mobitest cantonimobi
+docker run -d -p 80:80 --name mobitest -e "DISABLETRACKING=1" cantonimobi
 
 ip=$(docker-machine ip default)
 echo Website is available on http://$ip/
