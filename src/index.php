@@ -1,10 +1,7 @@
 <?php
-  define ('TRACKING', false); // whether or not redirect & log outbound links
-  if (TRACKING) {
-    include ('util.inc');
-  }
-  ob_start("ob_gzhandler");
-  $ga_tracking = true;
+include ('util.inc');
+define ('TRACKING', false); // whether or not redirect & log outbound links
+ob_start("ob_gzhandler");
 
   /* If 'cat' parameter specified and matches, show just that category;
      otherwise show main index */
@@ -32,10 +29,6 @@
       http_response_code(404);
       die;
     }
-  }
-  if (isset($_GET['notrack'])) {
-    // useful for testing
-    $ga_tracking = false;
   }
   $desc = ($idx) ? "Top mobile sites for Android, iPhone, Windows or smart phones. Focus on simplicity and speed." : "Mobile $catname Sites";
 ?>
@@ -86,11 +79,9 @@
             $sig = calcHash ($link);
             $link = "/r/?u=" . urlencode($link) . "&s=$sig";
         }
-        if ($ga_tracking) {
-          print "<li><a href=\"$link\" onclick=\"_gaq.push(['_trackPageview', '/tracking/$link'])\">" . $l['title'] . "</a>$new</li>\n";
-        } else {
-          print "<li><a href=\"$link\">" . $l['title'] . "</a>$new</li>\n";
-        }
+        print "<li><a href=\"$link\" onclick=\"_gaq.push(['_trackPageview', '/tracking/$link'])\">" . $l['title'] . "</a>$new</li>\n";
+        //print "<li><a href=\"$link\">" . $l['title'] . "</a>$new</li>\n";
+
     }
     print "</ul>\n";
   }
@@ -103,8 +94,8 @@
 <p>Follow <a href="https://twitter.com/bcantoni">@bcantoni</a> on Twitter - <a href="/about.php">About Cantoni.mobi</a> - <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/3.0/us/">CC Licensed</a></p>
 
 <?php
-  // google analytics
-  include('google.inc');
+// google analytics
+include('google.inc');
 ?>
 
 </body>
