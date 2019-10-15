@@ -8,7 +8,7 @@ array("url"=>"http://www.dot.ca.gov/cgi-bin/roadscell.cgi", "title"=>"California
 //array("url"=>"http://m.icaltrain.com/", "title"=>"Caltrain Schedules", "new"=>""), 
 array("url"=>"http://city.mobi/", "title"=>"City.mobi", "new"=>""), 
 array("url"=>"http://m.citysearch.com/", "title"=>"Citysearch", "new"=>""), 
-array("url"=>"http://mobile.delta.com/", "title"=>"Delta Airlines", "new"=>""), 
+//array("url"=>"http://mobile.delta.com/", "title"=>"Delta Airlines", "new"=>""), 
 //array("url"=>"http://mobile.flightstats.com/go/Mobile/", "title"=>"Flight Stats", "new"=>""), 
 //array("url"=>"http://hopstop.com/pda", "title"=>"HopStop", "new"=>""), 
 //array("url"=>"http://mobile.jetblue.com/", "title"=>"Jet Blue", "new"=>""), 
