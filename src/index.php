@@ -40,7 +40,7 @@
   $desc = ($idx) ? "Top mobile sites for Android, iPhone, Windows or smart phones. Focus on simplicity and speed." : "Mobile $catname Sites";
 ?>
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Mobile <?php if (isset($catname)) { echo "$catname";} ?> Sites - Cantoni.mobi</title>
@@ -57,13 +57,6 @@
  #nav ul {margin: 0;padding: 0;list-style-type: none;}
  #nav ul li {display: inline;}
 </style>
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-1428941830337767",
-    enable_page_level_ads: true
-  });
-</script>
 </head>
 <body>
 <h1>Mobile <?php echo $catname; ?> Websites</h1>
