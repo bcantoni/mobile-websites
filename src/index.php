@@ -56,6 +56,7 @@
  p,li {font-size: 16px;}
  #nav ul {margin: 0;padding: 0;list-style-type: none;}
  #nav ul li {display: inline;}
+ li {margin: 0.5em 0;}
 </style>
 </head>
 <body>
