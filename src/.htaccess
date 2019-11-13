@@ -1,4 +1,5 @@
 AddType text/cache-manifest .appcache
+AddType application/manifest+json .manifest
 AddDefaultCharset UTF-8
 
 RewriteEngine On
@@ -20,4 +21,6 @@ RewriteRule . /index.php?cat=%{REQUEST_URI} [L]
 
 # cache everything just a bit
 ExpiresActive on
-ExpiresByType text/html "access plus 1 hour"
+ExpiresByType text/html "access plus 4 hours"
+ExpiresByType image/png "access plus 3 days"
+ExpiresByType application/manifest+json "access plus 3 days"
