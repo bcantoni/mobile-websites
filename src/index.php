@@ -37,13 +37,13 @@
       die;
     }
   }
-  $desc = ($idx) ? "Top mobile sites for Android, iPhone, Windows or smart phones. Focus on simplicity and speed." : "Mobile $catname Sites";
+  $desc = ($idx) ? "Top mobile sites for any kind of phone, with a focus on simplicity and speed." : "Mobile $catname Sites";
 ?>
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Mobile <?php if (isset($catname)) { echo "$catname";} ?> Sites - Cantoni.mobi</title>
+<title>Mobile <?php if (isset($catname)) { echo "$catname";} ?> Sites</title>
 <meta name="description" content="<?php echo $desc; ?>">
 <meta name="keywords" content="mobile,mobile web,websites,android,iphone,blackberry,windows,smartphone">
 <meta name=viewport content="width=device-width, initial-scale=1">
