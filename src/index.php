@@ -38,12 +38,13 @@
     }
   }
   $desc = ($idx) ? "Top mobile sites for any kind of phone, with a focus on simplicity and speed." : "Mobile $catname Sites";
+  $title = ($idx) ? "Mobile Sites" : "Mobile $catname Sites";
 ?>
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Mobile <?php if (isset($catname)) { echo "$catname";} ?> Sites</title>
+<title>$title</title>
 <meta name="description" content="<?php echo $desc; ?>">
 <meta name="keywords" content="mobile,mobile web,websites,android,iphone,blackberry,windows,smartphone">
 <meta name=viewport content="width=device-width, initial-scale=1">
@@ -64,7 +65,7 @@
 </style>
 </head>
 <body>
-<h1>Mobile <?php echo $catname; ?> Websites</h1>
+<h1>$title</h1>
 
 <?php
   if ($idx) {
@@ -92,8 +93,6 @@
     }
     print "</ul>\n";
   }
-
-  //include ('adsense.inc');
 ?>
 
 <p>Try <a href="https://tweetfave.com" title="Tweetfave - Twitter favorites delivered to your inbox">Tweetfave</a> - your Twitter favorites automatically delivered to your inbox!</p>
@@ -107,4 +106,4 @@
 
 </body>
 </html>
-<!-- 2019 -->
+<!-- 2020 -->
