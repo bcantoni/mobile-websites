@@ -63,9 +63,10 @@ This project has a simple Travis CI (continuous integration) [project](https://t
 For testing locally there is a simple Docker configuration included. The included Dockerfile creates a container using PHP and setting up a configuration which mimics cantoni.mobi.
 
 Scripts:
+
 * `./docker/run` - create the Docker container and start it; the website should be viewable on port 80 from your Docker host
 * `./docker/stop` - stop the Docker container and clean up
 
 ## License
 
-Copyright (C) 2002-2019 Brian Cantoni. The code and content in this project are licensed under [Creative Commons — Attribution-NonCommercial-ShareAlike 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/us/).
+Copyright (C) 2002-2020 Brian Cantoni. The code and content in this project are licensed under [Creative Commons — Attribution-NonCommercial-ShareAlike 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/us/).

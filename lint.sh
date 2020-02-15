@@ -14,6 +14,7 @@ while test $# -gt 0; do
     fi
 
     for file in `find $current -type f -name "*.php"` ; do
+        echo $file
         RESULTS=`php -l $file`
 
         if [ "$RESULTS" != "No syntax errors detected in $file" ] ; then
@@ -23,6 +24,7 @@ while test $# -gt 0; do
     done
 
     for file in `find $current -type f -name "*.inc"` ; do
+        echo $file
         RESULTS=`php -l $file`
 
         if [ "$RESULTS" != "No syntax errors detected in $file" ] ; then
