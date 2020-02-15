@@ -44,7 +44,7 @@
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>$title</title>
+<title><?php echo $title; ?></title>
 <meta name="description" content="<?php echo $desc; ?>">
 <meta name="keywords" content="mobile,mobile web,websites,android,iphone,blackberry,windows,smartphone">
 <meta name=viewport content="width=device-width, initial-scale=1">
@@ -65,7 +65,7 @@
 </style>
 </head>
 <body>
-<h1>$title</h1>
+<h1><?php echo $title; ?></h1>
 
 <?php
   if ($idx) {
